@@ -1,134 +1,258 @@
-# genshin-impact-archive
+# 🎮 Genshin Impact Archive
 
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+> A comprehensive Excel-based archive and tracker for **Genshin Impact** characters, weapons, artifacts, books, and world exploration progress.
 
-Genshin Impact Archive — Excel workbook export of game data (XLSX).
+This repository contains a single Excel workbook, **`Genshin Archive.xlsx`**, designed as an all-in-one reference and progression tracker for Genshin Impact players. The workbook aggregates structured game data and account-tracking tools into a portable offline format.
 
-This repository contains a single Excel workbook, `Genshin Archive.xlsx`, which aggregates structured data for Genshin Impact entities. The export was prepared and committed by the repository owner for offline analysis, reference, or tooling.
+---
 
-Repository snapshot
+# ✨ Features
 
-- File: `Genshin Archive.xlsx`
-- Data coverage: exported up to Genshin Impact version 7.0
-- Last updated in this repository: 2026-08-31
-- License: Apache License 2.0 — see the LICENSE file included in this repo
+✅ Character Collection Tracking  
+✅ Weapon Inventory Management  
+✅ Artifact Set Reference Database  
+✅ Book & Lore Collection Tracker  
+✅ Regional Exploration Progress Monitoring  
+✅ Offline Excel-Based Format  
+✅ Version 7.0 Data Coverage
 
-Quick links
+---
 
-- Download workbook (GitHub web): https://github.com/irealashu/genshin-impact-archive/blob/main/Genshin%20Archive.xlsx
-- Raw download: https://raw.githubusercontent.com/irealashu/genshin-impact-archive/main/Genshin%20Archive.xlsx
+# 📦 Repository Snapshot
 
-Contents
+| Property | Value |
+|-----------|---------|
+| 📄 File | `Genshin Archive.xlsx` |
+| 🎯 Game Version | 7.0 |
+| 📅 Last Updated | 2026-08-31 |
+| ⚖️ License | Apache License 2.0 |
 
-The Excel workbook contains separate sheets (tabs) for the main entity types:
+---
 
-- Characters
-- Weapons
-- Artifacts
-- Books (materials like talent/ascension books)
-- Regions
+# 📂 Workbook Structure
 
-Each sheet is structured as rows (one entity per row) and columns for attributes. Column names and exact structure may vary between exports — open the workbook to inspect headers. Below are the typical columns included per sheet to help you get started.
+The workbook is organized into separate sheets dedicated to major game systems.
 
-Typical sheet structures (example columns)
+## 👥 Characters
 
-- Characters
-  - id (internal id)
-  - name
-  - element
-  - weapon_type
-  - rarity
-  - base_hp / base_atk / base_def
-  - ascension_materials
-  - talent_materials
-  - description / lore
-  - release_version
+Track your roster and build progress.
 
-- Weapons
-  - id
-  - name
-  - type
-  - rarity
-  - base_atk
-  - secondary_stat
-  - passive_description
-  - how_to_obtain
-  - release_version
+### Included Information
 
-- Artifacts
-  - id
-  - name
-  - set_bonus
-  - main_stats
-  - sub_stats
-  - rarity
-  - sources
+- ✅ Ownership Status
+- 📈 Character Level
+- ⭐ Constellation Level
+- 🗡️ Equipped Weapon
+- 🔧 Weapon Level
+- 🎯 Talent Levels
+- 🏺 Artifact Build Status
+- ⚡ Endgame Readiness
 
-- Books
-  - id
-  - name
-  - type (talent/ascension)
-  - rarity
-  - sources
+Perfect for managing teams, planning builds, and tracking character progression.
 
-- Regions
-  - id
-  - name
-  - description
-  - version_added
+---
 
-Note: The workbook may include additional sheets or slightly different column names; these examples are provided as a guide.
+## ⚔️ Weapons
 
-How to use
+A complete weapon collection tracker.
 
-1. Download `Genshin Archive.xlsx` using one of the links above.
-2. Open with Microsoft Excel, LibreOffice Calc, or import into Google Sheets.
-3. Inspect the first row of each sheet for column headers. Use filters, sort, or pivot tables to analyze the data.
-4. To consume programmatically, export the sheets to CSV (most spreadsheet applications can do this) and process with your preferred tooling.
+### Included Information
 
-Example: load a sheet in Python (pandas)
+- ✅ Ownership
+- ⭐ Rarity
+- 🛠️ Refinement Rank
+- 📦 Weapon Count
+- 🎯 Weapon Type
+
+### Weapon Categories
+
+| Emoji | Type |
+|--------|--------|
+| ⚔️ | Sword |
+| 🏹 | Bow |
+| 🪄 | Catalyst |
+| 🔱 | Polearm |
+| 🪓 | Claymore |
+
+---
+
+## 🏺 Artifacts
+
+Reference database for artifact sets and pieces.
+
+### Includes
+
+- Complete Artifact Sets
+- Individual Artifact Pieces
+- Set Organization
+- Piece Slot Information
+
+### Artifact Slots
+
+| Slot | Emoji |
+|--------|--------|
+| Flower of Life | 🌸 |
+| Plume of Death | 🪶 |
+| Sands of Eon | ⏳ |
+| Goblet of Eonothem | 🏆 |
+| Circlet of Logos | 👑 |
+
+Useful for farming plans and set completion tracking.
+
+---
+
+## 📚 Books & Lore Archive
+
+Track collectible books obtained throughout Teyvat.
+
+### Includes
+
+- 📖 Book Titles
+- 🌍 Locations
+- 📚 Volume Numbers
+- ✅ Collection Status
+
+Designed for lore enthusiasts and completionists seeking full archive completion.
+
+---
+
+## 🗺️ Exploration Progress
+
+Monitor exploration completion across every major nation and subregion.
+
+### Supported Regions
+
+- 🌬️ Mondstadt
+- ⛰️ Liyue
+- ⚡ Inazuma
+- 🌿 Sumeru
+- ⚖️ Fontaine
+- 🔥 Natlan
+- 🌙 Nod-Krai
+- ❄️ Snezhnaya
+
+### Track
+
+- Exploration Percentage
+- Subregion Completion
+- Statue of the Seven Progress
+- Regional Progression
+
+---
+
+# 🚀 How To Use
+
+1. Download `Genshin Archive.xlsx`
+2. Open it with:
+   - Microsoft Excel
+   - LibreOffice Calc
+   - Google Sheets
+3. Navigate between sheets using the workbook tabs.
+4. Update ownership, levels, collection status, and exploration progress as you play.
+5. Use filtering and sorting tools for deeper analysis.
+
+---
+
+# 📊 Included Sheets
+
+| Sheet | Purpose |
+|---------|----------|
+| 👥 Characters | Character roster and builds |
+| ⚔️ Weapons | Weapon inventory tracking |
+| 🏺 Artifacts | Artifact database |
+| 📚 Books | Book collection tracker |
+| 🗺️ Regions | Exploration progress tracker |
+
+---
+
+# 🐍 Example: Load Data with Python
 
 ```python
 import pandas as pd
-df = pd.read_excel('Genshin Archive.xlsx', sheet_name='Characters')
+
+df = pd.read_excel(
+    "Genshin Archive.xlsx",
+    sheet_name="Characters"
+)
+
+print(df.head())
 print(df.columns)
 ```
 
-Contributing
+---
 
-Contributions are welcome. If you have:
+# 🤝 Contributing
 
-- Corrections or fixes to the existing export,
-- An updated export that covers newer game versions,
-- Improvements to this repository (README, LICENSE, metadata),
+Contributions are welcome.
 
-please open an issue describing the change, or submit a pull request with the updated `Genshin Archive.xlsx` (or the delta and an explanation). When submitting workbook updates, please:
+You may contribute:
 
-- Keep the filename `Genshin Archive.xlsx` (or use `Genshin Archive v{version}.xlsx` for versioned exports),
-- Include a short changelog entry in your PR description describing what changed and the game version covered,
-- If the update is a derived dataset or includes third-party content, provide attribution in the PR and include a NOTICE file if required.
+- 🛠️ Data corrections
+- 📈 Updated exports for newer game versions
+- 📝 Documentation improvements
+- 🚀 New tracking features
 
-License
+When submitting updates:
 
-This repository and the files in it are licensed under the Apache License 2.0. See `LICENSE` for full terms.
+1. Keep the workbook filename consistent.
+2. Mention the game version covered.
+3. Include a short changelog describing modifications.
+4. Provide attribution for any third-party data sources if required.
 
-Attribution and data source
+---
 
-This archive was exported by the repository owner (@irealashu). If you derived data from other public sources, please include attribution in a NOTICE file or the PR that adds the data.
+# 📜 Versioning
 
-Changelog / Versioning
+Recommended approaches:
 
-If you maintain this archive over time, consider using one of these patterns:
+### Option 1: Single File
 
-- Keep the canonical file name `Genshin Archive.xlsx` and update it in-place; use Git commit messages to track changes (recommended for small changes).
-- Provide versioned exports `Genshin Archive v7.0.xlsx`, `Genshin Archive v7.1.xlsx`, etc., so consumers can download a specific snapshot.
+Keep updating:
 
-Support / Contact
+```text
+Genshin Archive.xlsx
+```
 
-- Repository owner: @irealashu
-- Issues: https://github.com/irealashu/genshin-impact-archive/issues
+and track changes through Git history.
 
-Acknowledgements
+### Option 2: Versioned Releases
 
-This repository is a personal/exported snapshot for convenience and analysis. If you re-distribute or build upon this data, ensure you comply with the Apache-2.0 license and any terms required by original data sources.
+Use versioned exports:
 
+```text
+Genshin Archive v7.0.xlsx
+Genshin Archive v7.1.xlsx
+Genshin Archive v8.0.xlsx
+```
+
+This allows users to download specific historical snapshots.
+
+---
+
+# ⚖️ License
+
+This project is licensed under the **Apache License 2.0**.
+
+See the repository's `LICENSE` file for complete terms and conditions.
+
+---
+
+# 👤 Maintainer
+
+**Repository Owner:** @irealashu
+
+If you discover issues or have suggestions, please open a GitHub issue or submit a pull request.
+
+---
+
+# 🌟 About This Project
+
+This archive was created to provide a convenient, offline, spreadsheet-based reference for tracking and analyzing Genshin Impact progression data.
+
+Whether you're a collector, completionist, theory crafter, or casual player, the archive aims to keep your journey through Teyvat organized and accessible.
+
+---
+
+> *"The journey itself has meaning. The destination is not everything."*
+
+💫 Ad Astra Abyssosque. Happy adventuring, Traveler.
