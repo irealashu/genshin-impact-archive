@@ -198,8 +198,8 @@ Each sheet in the workbook serves a specific purpose in tracking different aspec
 - 🌿 **Sumeru** — Botanical knowledge and academic texts
 - ⚖️ **Fontaine** — Legal records and theatrical scripts
 - 🔥 **Natlan** — Cultural narratives and warrior tales
-- 🌙 **Nod-Krai** — Upcoming region content
-- ❄️ **Snezhnaya** — Historical archives and military records
+- 🌙 **Nod-Krai** — Luna related content
+- ❄️ **Snezhnaya** — Historical archives and records
 
 ### Use Cases
 
