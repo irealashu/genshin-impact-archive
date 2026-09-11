@@ -584,13 +584,12 @@ This archive was created to provide a convenient, **offline, spreadsheet-based r
 # 📚 Additional Resources
 
 - [Genshin Impact Official Wiki](https://genshin-impact.fandom.com)
-- [Spiral Abyss Guides](https://spiral-abyss.fandom.com)
-- [Character & Weapon Database](https://docs.google.com/spreadsheets/d/1RUCqeWAWpqUGKI8U0MYMhvXy9pZGGv5WD5vbr1PqwKc/)
 - [Artifact Farming Guide](https://genshin-impact.fandom.com/wiki/Artifact)
 
 ---
 
-> *"The journey itself has meaning. The destination is not everything."*
+> *"Now, you who has set foot in this world. Your journey has reached its end, but one final doorway remains. Step forth, if you have understood the meaning of your journey. Defeat me, command me to step aside, show me that you are worthier than I to rescue her. Then, the threads of all fate will be yours to re-weave.
+My memory has all but faded completely... But I will always remember how much she too, loved these flowers."*  --Dainsleif, Teyvat Chapter Storyline Preview
 
 ✨ **Ad Astra Abyssosque.** Happy adventuring, Traveler! 🌍
 
