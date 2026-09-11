@@ -594,7 +594,7 @@ This archive was created to provide a convenient, **offline, spreadsheet-based r
 ---
 
 > *"Now, you who has set foot in this world. Your journey has reached its end, but one final doorway remains. Step forth, if you have understood the meaning of your journey. Defeat me, command me to stand in your way, or relinquish these divine relics to me.* 
-> *My memory has all but faded completely... But I will always remember how much she too, loved these flowers."*  --Dainsleif, Teyvat Chapter Storyline Preview
+> *My memory has all but faded completely... But I will always remember how much she too, loved these flowers."*  - **Dainsleif**
 
 ✨ **Ad Astra Abyssosque.** Happy adventuring, Traveler! 🌍
 
