@@ -2,7 +2,7 @@
 
 > A comprehensive Excel-based archive and tracker for **Genshin Impact** characters, weapons, artifacts, books, and world exploration progress.
 
-This repository contains a single Excel workbook, **`Genshin Archive.xlsx`**, designed as an all-in-one reference and progression tracker for Genshin Impact players. The workbook aggregates structured data covering characters, weapons, artifacts, collectibles, and exploration metrics to help players organize their journey through Teyvat.
+This repository contains a single Excel workbook, **`Genshin Archive.xlsx`**, designed as an all-in-one reference and progression tracker for Genshin Impact players. The workbook aggregates structured data and interactive tracking tools for efficient progression management.
 
 ---
 
@@ -10,14 +10,19 @@ This repository contains a single Excel workbook, **`Genshin Archive.xlsx`**, de
 
 - [Quick Start](#-quick-start)
 - [Features](#-features)
-- [Repository Overview](#-repository-snapshot)
+- [Repository Snapshot](#-repository-snapshot)
 - [Detailed Sheet Documentation](#-detailed-sheet-documentation)
-- [How to Use](#-how-to-use)
+- [How To Use](#-how-to-use)
+- [Included Sheets Summary](#-included-sheets-summary)
 - [Data Structure](#-data-structure)
-- [Example Usage](#-example-load-data-with-python)
+- [Example: Load Data with Python](#-example-load-data-with-python)
 - [Contributing](#-contributing)
-- [Versioning Strategy](#-versioning)
+- [Versioning & Maintenance](#-versioning--maintenance)
 - [License](#-license)
+- [Maintainer & Support](#-maintainer--support)
+- [About This Project](#-about-this-project)
+- [Quick Tips for Success](#-quick-tips-for-success)
+- [Additional Resources](#-additional-resources)
 
 ---
 
@@ -547,7 +552,7 @@ For direct inquiries, feel free to reach out through GitHub or open an issue.
 
 # 🌟 About This Project
 
-This archive was created to provide a convenient, **offline, spreadsheet-based reference** for tracking and analyzing Genshin Impact progression data. No special software, accounts, or internet connectivity required—just you, your data, and Excel.
+This archive was created to provide a convenient, **offline, spreadsheet-based reference** for tracking and analyzing Genshin Impact progression data. No special software, accounts, or internet connection is required—just a spreadsheet application and this workbook.
 
 ### Who Is This For?
 
@@ -588,8 +593,8 @@ This archive was created to provide a convenient, **offline, spreadsheet-based r
 
 ---
 
-> *"Now, you who has set foot in this world. Your journey has reached its end, but one final doorway remains. Step forth, if you have understood the meaning of your journey. Defeat me, command me to step aside, show me that you are worthier than I to rescue her. Then, the threads of all fate will be yours to re-weave.
-My memory has all but faded completely... But I will always remember how much she too, loved these flowers."*  --Dainsleif, Teyvat Chapter Storyline Preview
+> *"Now, you who has set foot in this world. Your journey has reached its end, but one final doorway remains. Step forth, if you have understood the meaning of your journey. Defeat me, command me to stand in your way, or relinquish these divine relics to me.* 
+> *My memory has all but faded completely... But I will always remember how much she too, loved these flowers."*  --Dainsleif, Teyvat Chapter Storyline Preview
 
 ✨ **Ad Astra Abyssosque.** Happy adventuring, Traveler! 🌍
 
