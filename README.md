@@ -228,12 +228,7 @@ Each sheet in the workbook serves a specific purpose in tracking different aspec
 | **Region Name** | — | Major nation in Teyvat |
 | **Exploration %** | 0-100% | Overall exploration completion |
 | **Subregions** | Multiple | Individual areas within each region |
-| **Statue of the Seven** | 0-8 | Statue level (increases damage to regional enemies) |
-| **Waypoints Unlocked** | Count | Teleport points discovered |
-| **Domain Count** | Count | Challenge domains found and unlocked |
-| **Chests Collected** | Count | Approximate chest count per region |
-| **Puzzles Solved** | Progress | Status of environmental puzzles |
-| **Notable Locations** | ✓/✗ | Key landmarks discovered |
+| **Statue of the Seven** | 0-8 | Statue level |
 
 ### Supported Regions & Details
 
@@ -245,8 +240,8 @@ Each sheet in the workbook serves a specific purpose in tracking different aspec
 | Sumeru | 🌿 | v3.0 | Rainforest and desert; largest region |
 | Fontaine | ⚖️ | v4.0 | European-inspired; underwater mechanics |
 | Natlan | 🔥 | v5.0 | South American-inspired; newest major region |
-| Nod-Krai | 🌙 | TBA | Upcoming Nordic-themed region |
-| Snezhnaya | ❄️ | TBA | Final playable region; home of The Fatui |
+| Nod-Krai | 🌙 | v6.0 | Nordic-themed region |
+| Snezhnaya | ❄️ | v7.0 | Final playable region; home of The Fatui |
 
 ### Use Cases
 
@@ -310,7 +305,7 @@ Each sheet in the workbook serves a specific purpose in tracking different aspec
 | **Weapons** | ⚔️ | Weapon inventory management | Type, Rarity, Refinement, Ownership |
 | **Artifacts** | 🏺 | Artifact set reference database | Set Effects, Slots, Farming Locations |
 | **Books** | 📚 | Book collection and lore tracking | Title, Location, Collection Status |
-| **Regions** | 🗺️ | Exploration progress monitoring | Completion %, Statue Level, Waypoints |
+| **Regions** | 🗺️ | Exploration progress monitoring | Completion %, Statue Level |
 
 ---
 
