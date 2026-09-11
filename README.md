@@ -2,19 +2,35 @@
 
 > A comprehensive Excel-based archive and tracker for **Genshin Impact** characters, weapons, artifacts, books, and world exploration progress.
 
-This repository contains a single Excel workbook, **`Genshin Archive.xlsx`**, designed as an all-in-one reference and progression tracker for Genshin Impact players. The workbook aggregates structured game data and account-tracking tools into a portable offline format.
+This repository contains a single Excel workbook, **`Genshin Archive.xlsx`**, designed as an all-in-one reference and progression tracker for Genshin Impact players. The workbook aggregates structured data covering characters, weapons, artifacts, collectibles, and exploration metrics to help players organize their journey through Teyvat.
+
+---
+
+## 📋 Table of Contents
+
+- [Quick Start](#-quick-start)
+- [Features](#-features)
+- [Repository Overview](#-repository-snapshot)
+- [Detailed Sheet Documentation](#-detailed-sheet-documentation)
+- [How to Use](#-how-to-use)
+- [Data Structure](#-data-structure)
+- [Example Usage](#-example-load-data-with-python)
+- [Contributing](#-contributing)
+- [Versioning Strategy](#-versioning)
+- [License](#-license)
 
 ---
 
 # ✨ Features
 
-✅ Character Collection Tracking  
-✅ Weapon Inventory Management  
-✅ Artifact Set Reference Database  
-✅ Book & Lore Collection Tracker  
-✅ Regional Exploration Progress Monitoring  
-✅ Offline Excel-Based Format  
-✅ Version 7.0 Data Coverage
+✅ **Character Collection Tracking** — Manage roster, levels, constellations, and talent progression  
+✅ **Weapon Inventory Management** — Track owned weapons, refinement ranks, and equipment status  
+✅ **Artifact Set Reference Database** — Complete artifact set reference with slot information  
+✅ **Book & Lore Collection Tracker** — Catalog books and lore pieces from across Teyvat  
+✅ **Regional Exploration Progress Monitoring** — Track exploration percentage and statue progress in each region  
+✅ **Offline Excel-Based Format** — No internet required; works on any device with Excel or compatible software  
+✅ **Version 7.0 Data Coverage** — Updated with the latest game content and characters  
+✅ **Sortable & Filterable** — Built-in Excel functionality for custom analysis and searches  
 
 ---
 
@@ -22,210 +38,482 @@ This repository contains a single Excel workbook, **`Genshin Archive.xlsx`**, de
 
 | Property | Value |
 |-----------|---------|
-| 📄 File | `Genshin Archive.xlsx` |
+| 📄 Main File | `Genshin Archive.xlsx` |
 | 🎯 Game Version | 7.0 |
 | 📅 Last Updated | 2026-08-31 |
 | ⚖️ License | Apache License 2.0 |
+| 📊 Sheet Count | 5 comprehensive sheets |
+| 💾 Format | Excel (.xlsx) / Compatible spreadsheet software |
 
 ---
 
-# 📂 Workbook Structure
+# 📂 Detailed Sheet Documentation
 
-The workbook is organized into separate sheets dedicated to major game systems.
-
-## 👥 Characters
-
-Track your roster and build progress.
-
-### Included Information
-
-- ✅ Ownership Status
-- 📈 Character Level
-- ⭐ Constellation Level
-- 🗡️ Equipped Weapon
-- 🔧 Weapon Level
-- 🎯 Talent Levels
-- 🏺 Artifact Build Status
-- ⚡ Endgame Readiness
-
-Perfect for managing teams, planning builds, and tracking character progression.
+Each sheet in the workbook serves a specific purpose in tracking different aspects of your Genshin Impact progression.
 
 ---
 
-## ⚔️ Weapons
+## 👥 Characters Sheet
 
-A complete weapon collection tracker.
+**Purpose:** Maintain a complete roster of your characters and track their progression, equipment, and build readiness.
 
-### Included Information
+### What You Can Track
 
-- ✅ Ownership
-- ⭐ Rarity
-- 🛠️ Refinement Rank
-- 📦 Weapon Count
-- 🎯 Weapon Type
+| Metric | Description |
+|--------|-------------|
+| **Ownership Status** | Whether you own or are planning to pull the character |
+| **Character Level** | Current level (1-90) |
+| **Constellation Level** | Unlocked constellations (0-6) |
+| **Equipped Weapon** | The weapon currently equipped on this character |
+| **Weapon Level** | Weapon ascension and enhancement level |
+| **Talent Levels** | Normal Attack, Elemental Skill, and Elemental Burst levels (1-15) |
+| **Artifact Build Status** | Whether the character has a complete artifact set equipped |
+| **Endgame Readiness** | Quick visual indicator if the character is prepared for high-level content |
 
-### Weapon Categories
+### Use Cases
 
-| Emoji | Type |
-|--------|--------|
-| ⚔️ | Sword |
-| 🏹 | Bow |
-| 🪄 | Catalyst |
-| 🔱 | Polearm |
-| 🪓 | Claymore |
+- 👥 Organize your full character roster alphabetically or by element
+- 🎯 Plan which characters to level next based on available resources
+- 🔄 Track build progression and identify characters needing investment
+- 💪 Identify your strongest teams for spiral abyss and event challenges
+- 📊 Compare constellation levels across your roster
 
----
+### Tips
 
-## 🏺 Artifacts
-
-Reference database for artifact sets and pieces.
-
-### Includes
-
-- Complete Artifact Sets
-- Individual Artifact Pieces
-- Set Organization
-- Piece Slot Information
-
-### Artifact Slots
-
-| Slot | Emoji |
-|--------|--------|
-| Flower of Life | 🌸 |
-| Plume of Death | 🪶 |
-| Sands of Eon | ⏳ |
-| Goblet of Eonothem | 🏆 |
-| Circlet of Logos | 👑 |
-
-Useful for farming plans and set completion tracking.
+- Sort by **Character Level** to identify underleveled characters
+- Filter by **Element** to find all Cryo, Electro, Pyro, etc. characters
+- Use conditional formatting to highlight characters ready for endgame content
 
 ---
 
-## 📚 Books & Lore Archive
+## ⚔️ Weapons Sheet
 
-Track collectible books obtained throughout Teyvat.
+**Purpose:** Maintain a complete inventory of all weapons you own, including their types, rarity, and refinement status.
 
-### Includes
+### Tracked Information
 
-- 📖 Book Titles
-- 🌍 Locations
-- 📚 Volume Numbers
-- ✅ Collection Status
+| Attribute | Details |
+|-----------|---------|
+| **Weapon Name** | Official name of the weapon |
+| **Ownership Status** | Own it, Pending (planning to obtain), or Reference only |
+| **Rarity** | 3-star, 4-star, or 5-star weapons |
+| **Weapon Type** | Sword, Bow, Catalyst, Polearm, or Claymore |
+| **Refinement Rank** | R1 to R5 (determines weapon passive strength) |
+| **Weapon Count** | How many copies you own (useful for tracking duplicates) |
+| **Current Equip Status** | Which character is using this weapon, if any |
+| **Enhancement Level** | Weapon level and ascension status |
 
-Designed for lore enthusiasts and completionists seeking full archive completion.
+### Weapon Categories & Symbols
+
+| Emoji | Type | Example Characters |
+|--------|--------|--------|
+| ⚔️ | Sword | Traveler, Bennett, Kazuha |
+| 🏹 | Bow | Amber, Fischl, Yelan |
+| 🪄 | Catalyst | Barbara, Mika, Nahida |
+| 🔱 | Polearm | Zhongli, Hu Tao, Cyno |
+| 🪓 | Claymore | Diluc, Alhaitham, Ganyu |
+
+### Use Cases
+
+- 🔍 Quickly find which weapon is best for a specific character
+- 📦 Track banner weapons and identify farming priorities
+- 🎯 Plan weapon enhancement based on available materials
+- 💎 Identify 5-star weapons worth rolling for
+- 🔄 Manage weapon transfers between characters during updates
+
+### Tips
+
+- Sort by **Rarity** to focus on 5-star weapons first
+- Filter by **Type** to find all available options for a specific character class
+- Color-code weapons by refinement rank for quick visual identification
 
 ---
 
-## 🗺️ Exploration Progress
+## 🏺 Artifacts Sheet
 
-Monitor exploration completion across every major nation and subregion.
+**Purpose:** Reference database for all artifact sets in the game, including individual pieces and slot information.
 
-### Supported Regions
+### Artifact Data Structure
 
-- 🌬️ Mondstadt
-- ⛰️ Liyue
-- ⚡ Inazuma
-- 🌿 Sumeru
-- ⚖️ Fontaine
-- 🔥 Natlan
-- 🌙 Nod-Krai
-- ❄️ Snezhnaya
+| Field | Purpose |
+|--------|---------|
+| **Set Name** | Official artifact set name |
+| **Set Bonus (2-piece)** | Effect when 2 pieces of the set are equipped |
+| **Set Bonus (4-piece)** | Enhanced effect when full 4-piece set is equipped |
+| **Artifact Pieces** | The five individual pieces that compose the set |
+| **Slot Information** | Which slots each piece occupies |
+| **Recommended Elements/Characters** | Best champions for this set |
+| **Farming Location** | Which domain or boss drops this artifact |
+| **Acquisition Method** | Dungeon domain, overworld boss, etc. |
 
-### Track
+### Artifact Slots Reference
 
-- Exploration Percentage
-- Subregion Completion
-- Statue of the Seven Progress
-- Regional Progression
+| Slot | Emoji | Stat Type | Primary Focus |
+|--------|--------|-----------|---------|
+| Flower of Life | 🌸 | Fixed HP | Support base stats |
+| Plume of Death | 🪶 | Fixed ATK | Damage scaling |
+| Sands of Eon | ⏳ | % Stat (ATK/EM/ER) | Character-specific scaling |
+| Goblet of Eonothem | 🏆 | % Damage (Elemental/Physical) | Reaction or type scaling |
+| Circlet of Logos | 👑 | % Stat (CRIT/Healing/ER) | Critical build optimization |
+
+### Use Cases
+
+- 📖 Reference guide when planning character builds
+- 🎯 Identify which sets work best for specific characters
+- 🔄 Plan artifact farming routes based on location and availability
+- 🏆 Compare different set combinations for the same character
+- 📊 Track set completion progress for your inventory
+
+### Tips
+
+- Use this sheet as a **lookup table** while planning new builds
+- Cross-reference with the Characters sheet to identify farming priorities
+- Filter by **Farming Location** to consolidate your daily farming schedule
+
+---
+
+## 📚 Books & Lore Archive Sheet
+
+**Purpose:** Track all collectible books and lore materials scattered throughout Teyvat for completionists and lore enthusiasts.
+
+### Tracked Information
+
+| Field | Description |
+|--------|-------------|
+| **Book Title** | Name of the book or lore piece |
+| **Book Series** | Which book series it belongs to (if applicable) |
+| **Volume Number** | Volume or chapter number in the series |
+| **Collection Status** | Whether you've collected it or not |
+| **Location** | Region and specific area where it can be found |
+| **Coordinates** | In-game coordinates (if trackable) |
+| **Acquisition Method** | How to obtain (pickup, quest reward, shop, etc.) |
+| **Date Collected** | When you obtained this book |
+| **Relevance** | Plot significance or character connections |
+
+### Regions Covered
+
+- 🌬️ **Mondstadt** — Windblume region books and records
+- ⛰️ **Liyue** — Ancient Chinese-inspired lore and archives
+- ⚡ **Inazuma** — Samurai culture and historical records
+- 🌿 **Sumeru** — Botanical knowledge and academic texts
+- ⚖️ **Fontaine** — Legal records and theatrical scripts
+- 🔥 **Natlan** — Cultural narratives and warrior tales
+- 🌙 **Nod-Krai** — Upcoming region content
+- ❄️ **Snezhnaya** — Historical archives and military records
+
+### Use Cases
+
+- 📖 Systematically collect all available books for lore completionists
+- 🎯 Plan book-hunting expeditions by region
+- 📚 Track your collection progress toward 100% completion
+- 🔍 Cross-reference books with character backstories
+- 📍 Identify books you still need to collect
+
+### Tips
+
+- Sort by **Region** to focus on one area at a time
+- Filter by **Collection Status** to see only uncollected books
+- Use coordinates (if available) with map markers for efficient collection runs
+
+---
+
+## 🗺️ Exploration Progress Sheet
+
+**Purpose:** Monitor your exploration completion across every major nation and subregion in Teyvat.
+
+### Tracked Metrics
+
+| Metric | Range | Details |
+|--------|-------|---------|
+| **Region Name** | — | Major nation in Teyvat |
+| **Exploration %** | 0-100% | Overall exploration completion |
+| **Subregions** | Multiple | Individual areas within each region |
+| **Statue of the Seven** | 0-8 | Statue level (increases damage to regional enemies) |
+| **Waypoints Unlocked** | Count | Teleport points discovered |
+| **Domain Count** | Count | Challenge domains found and unlocked |
+| **Chests Collected** | Count | Approximate chest count per region |
+| **Puzzles Solved** | Progress | Status of environmental puzzles |
+| **Notable Locations** | ✓/✗ | Key landmarks discovered |
+
+### Supported Regions & Details
+
+| Region | Emoji | Release | Explorer Notes |
+|--------|--------|---------|---------|
+| Mondstadt | 🌬️ | Launch | Starter region; German-inspired architecture |
+| Liyue | ⛰️ | Launch | Asian-inspired; vast harbor and mountains |
+| Inazuma | ⚡ | v2.0 | Japanese islands; high difficulty domains |
+| Sumeru | 🌿 | v3.0 | Rainforest and desert; largest region |
+| Fontaine | ⚖️ | v4.0 | European-inspired; underwater mechanics |
+| Natlan | 🔥 | v5.0 | South American-inspired; newest major region |
+| Nod-Krai | 🌙 | TBA | Upcoming Nordic-themed region |
+| Snezhnaya | ❄️ | TBA | Final playable region; home of The Fatui |
+
+### Use Cases
+
+- 🎯 Track your completion percentage in each region
+- 📍 Identify underexplored areas for targeted farming
+- 🗿 Monitor Statue of the Seven progress for regional damage bonuses
+- 🏆 Challenge yourself to achieve 100% exploration across all regions
+- 📊 Maintain a checklist for your completionist goals
+
+### Tips
+
+- Sort by **Exploration %** to identify regions needing attention
+- Focus on raising **Statue of the Seven** for combat efficiency
+- Plan region-specific farming routes based on chests and puzzles
+- Cross-reference with event content that may open new areas
 
 ---
 
 # 🚀 How To Use
 
-1. Download `Genshin Archive.xlsx`
-2. Open it with:
-   - Microsoft Excel
-   - LibreOffice Calc
-   - Google Sheets
-3. Navigate between sheets using the workbook tabs.
-4. Update ownership, levels, collection status, and exploration progress as you play.
-5. Use filtering and sorting tools for deeper analysis.
+### Step-by-Step Setup
+
+1. **Download the File**
+   - Clone this repository or download `Genshin Archive.xlsx` directly
+
+2. **Open with Compatible Software**
+   - Microsoft Excel (Windows/Mac) — Recommended for full compatibility
+   - LibreOffice Calc (Windows/Mac/Linux) — Free, open-source alternative
+   - Google Sheets — Upload for cloud-based access
+   - Apple Numbers — Mac/iPad compatible
+
+3. **Explore the Sheets**
+   - Click tabs at the bottom to navigate between sheets
+   - Review the existing data as reference or template
+
+4. **Customize for Your Account**
+   - Update ownership status for characters and weapons you own
+   - Add your current levels and progression
+   - Mark completed regions and collected books
+   - Add notes specific to your build plans
+
+5. **Use Built-in Features**
+   - **Sort** columns to organize by level, rarity, or region
+   - **Filter** to find specific information quickly
+   - **Color-code** rows for visual organization
+   - **Add formulas** to track totals and completion percentages
+
+6. **Keep Updated**
+   - Update data as you progress through the game
+   - Add new characters/weapons after pulling
+   - Track constellation and talent level increases
+   - Mark exploration completion as you explore
 
 ---
 
-# 📊 Included Sheets
+# 📊 Included Sheets Summary
 
-| Sheet | Purpose |
-|---------|----------|
-| 👥 Characters | Character roster and builds |
-| ⚔️ Weapons | Weapon inventory tracking |
-| 🏺 Artifacts | Artifact database |
-| 📚 Books | Book collection tracker |
-| 🗺️ Regions | Exploration progress tracker |
+| Sheet | Icon | Primary Purpose | Key Metrics |
+|---------|--------|---------|---------|
+| **Characters** | 👥 | Character roster and build tracking | Level, Constellation, Talents, Equipment |
+| **Weapons** | ⚔️ | Weapon inventory management | Type, Rarity, Refinement, Ownership |
+| **Artifacts** | 🏺 | Artifact set reference database | Set Effects, Slots, Farming Locations |
+| **Books** | 📚 | Book collection and lore tracking | Title, Location, Collection Status |
+| **Regions** | 🗺️ | Exploration progress monitoring | Completion %, Statue Level, Waypoints |
+
+---
+
+# 📊 Data Structure
+
+### Character Record Example
+
+```
+Name: Nahida
+Element: Dendro
+Rarity: 5-Star
+Ownership: Yes
+Level: 90
+Constellation: C2
+Weapon: A Thousand Floating Dreams (Level 90)
+Normal Attack: 10
+Elemental Skill: 12
+Elemental Burst: 12
+Artifact Build: Dendro DMG% (Gilded Dreams 4-piece)
+Status: Endgame Ready
+```
+
+### Weapon Record Example
+
+```
+Name: Aqua Simulacra
+Type: Bow
+Rarity: 5-Star
+Refinement: R1
+Ownership: Yes
+Equipped On: Yelan
+Enhancement Level: 90
+Count: 1
+```
+
+### Artifact Set Example
+
+```
+Set Name: Gilded Dreams
+2-Piece Bonus: +80 Elemental Mastery
+4-Piece Bonus: +14% DMG for 8s when triggering reaction (stacks up to 4)
+Farming Location: Artifact Domain of Mastery (Sumeru)
+Best For: Nahida, Alhaitham, Support Catalyst users
+```
 
 ---
 
 # 🐍 Example: Load Data with Python
 
+### Basic Loading
+
 ```python
 import pandas as pd
 
-df = pd.read_excel(
+# Load Characters sheet
+df_characters = pd.read_excel(
     "Genshin Archive.xlsx",
     sheet_name="Characters"
 )
 
-print(df.head())
-print(df.columns)
+# Display first 10 characters
+print(df_characters.head(10))
+print("\nColumn Names:")
+print(df_characters.columns.tolist())
+```
+
+### Intermediate: Filtered Analysis
+
+```python
+import pandas as pd
+
+# Load all sheets
+xls = pd.ExcelFile("Genshin Archive.xlsx")
+df_characters = pd.read_excel(xls, "Characters")
+df_weapons = pd.read_excel(xls, "Weapons")
+
+# Find all 5-star characters you own
+five_star_owned = df_characters[
+    (df_characters["Rarity"] == "5-Star") & 
+    (df_characters["Ownership"] == "Yes")
+]
+print("5-Star Characters Owned:")
+print(five_star_owned[["Name", "Element", "Level", "Constellation"]])
+
+# Count weapons by type
+print("\nWeapon Count by Type:")
+print(df_weapons["Type"].value_counts())
+```
+
+### Advanced: Progress Tracking
+
+```python
+import pandas as pd
+import json
+from datetime import datetime
+
+# Load workbook
+df_chars = pd.read_excel("Genshin Archive.xlsx", "Characters")
+
+# Calculate team statistics
+avg_level = df_chars[df_chars["Ownership"] == "Yes"]["Level"].mean()
+avg_constellation = df_chars[df_chars["Ownership"] == "Yes"]["Constellation"].mean()
+
+print(f"Average Character Level: {avg_level:.1f}")
+print(f"Average Constellation: {avg_constellation:.1f}")
+
+# Export to JSON for other applications
+characters_data = df_chars.to_json(orient="records")
+with open("characters_export.json", "w") as f:
+    json.dump(json.loads(characters_data), f, indent=2)
 ```
 
 ---
 
 # 🤝 Contributing
 
-Contributions are welcome.
+We welcome contributions to improve the archive! Whether you're reporting errors, adding new data, or suggesting features, your input helps maintain this resource.
 
-You may contribute:
+### How to Contribute
 
-- 🛠️ Data corrections
-- 📈 Updated exports for newer game versions
-- 📝 Documentation improvements
-- 🚀 New tracking features
+1. **Report Issues**
+   - Found outdated game data? Open an issue describing the discrepancy
+   - Suggest missing characters, weapons, or artifacts
+   - Report formatting problems or unclear descriptions
 
-When submitting updates:
+2. **Submit Updates**
+   - Fork this repository
+   - Make corrections or add new data
+   - Ensure consistency with existing formatting
+   - Submit a pull request with a clear description of changes
 
-1. Keep the workbook filename consistent.
-2. Mention the game version covered.
-3. Include a short changelog describing modifications.
-4. Provide attribution for any third-party data sources if required.
+3. **Contribute Documentation**
+   - Improve this README with better explanations
+   - Add usage examples or tutorials
+   - Create guides for specific use cases
+
+4. **Add New Sheets**
+   - Domain farming guides
+   - Material farming calendars
+   - Spiral Abyss team recommendations
+   - Ley Line Overflow schedules
+
+### Contribution Guidelines
+
+✅ **Do**
+- Keep the workbook filename consistent (`Genshin Archive.xlsx`)
+- Mention the game version covered in your contribution
+- Include a short changelog describing your modifications
+- Provide attribution for any third-party data sources
+- Test your changes thoroughly before submitting
+
+❌ **Don't**
+- Remove existing data without justification
+- Change the core workbook structure without discussion
+- Add copyright-restricted game artwork (text-based data only)
+- Submit spreadsheets with personal/sensitive information
 
 ---
 
-# 📜 Versioning
+# 📜 Versioning & Maintenance
 
-Recommended approaches:
+### Versioning Strategy
 
-### Option 1: Single File
+#### Option 1: Single File (Recommended for Simplicity)
 
-Keep updating:
+Keep a single updated file:
 
-```text
+```
 Genshin Archive.xlsx
 ```
 
-and track changes through Git history.
+Track all changes through Git commit history. Users can:
+- Access the latest data by downloading the current version
+- Review historical changes via Git logs
+- Rollback to specific versions if needed
 
-### Option 2: Versioned Releases
+**Pros:** Simple, minimal duplication
+**Cons:** Historical versions not directly downloadable
 
-Use versioned exports:
+#### Option 2: Versioned Releases (Recommended for Archival)
 
-```text
+Use versioned exports aligned with game updates:
+
+```
 Genshin Archive v7.0.xlsx
 Genshin Archive v7.1.xlsx
 Genshin Archive v8.0.xlsx
 ```
 
-This allows users to download specific historical snapshots.
+**Pros:** Users can download historical snapshots, clear version tracking
+**Cons:** Repository grows in size, more maintenance overhead
+
+#### Option 3: Hybrid Approach (Recommended for Teams)
+
+Maintain current version + major releases:
+
+```
+Genshin Archive.xlsx (Current)
+releases/
+├── Genshin Archive v7.0.xlsx
+├── Genshin Archive v7.1.xlsx
+└── Genshin Archive v8.0.xlsx
+```
 
 ---
 
@@ -233,26 +521,84 @@ This allows users to download specific historical snapshots.
 
 This project is licensed under the **Apache License 2.0**.
 
+**Summary of Rights:**
+- ✅ Use commercially or privately
+- ✅ Modify and distribute
+- ✅ Place warranty disclaimer
+- ✅ Include license and copyright notice
+
 See the repository's `LICENSE` file for complete terms and conditions.
+
+**Copyright © 2026 irealashu**
 
 ---
 
-# 👤 Maintainer
+# 👤 Maintainer & Support
 
-**Repository Owner:** @irealashu
+**Repository Owner:** [@irealashu](https://github.com/irealashu)
 
-If you discover issues or have suggestions, please open a GitHub issue or submit a pull request.
+### Get Help or Provide Feedback
+
+- 🐛 **Report Bugs:** Open an issue describing the problem
+- 💡 **Suggest Features:** Request new tracking categories or sheets
+- 📝 **Ask Questions:** Use the Discussions section for general help
+- 🔄 **Submit Changes:** Fork and create a pull request with improvements
+
+### Contact
+
+For direct inquiries, feel free to reach out through GitHub or open an issue.
 
 ---
 
 # 🌟 About This Project
 
-This archive was created to provide a convenient, offline, spreadsheet-based reference for tracking and analyzing Genshin Impact progression data.
+This archive was created to provide a convenient, **offline, spreadsheet-based reference** for tracking and analyzing Genshin Impact progression data. No special software, accounts, or internet connectivity required—just you, your data, and Excel.
 
-Whether you're a collector, completionist, theory crafter, or casual player, the archive aims to keep your journey through Teyvat organized and accessible.
+### Who Is This For?
+
+- 🎯 **Completionists** — Track every character, weapon, and book
+- 📊 **Data Enthusiasts** — Analyze your progression metrics
+- 🔄 **Team Builders** — Plan optimal character and artifact combinations
+- 📱 **Casual Players** — Quick reference while playing
+- 🏆 **Abyss Climbers** — Organize teams and track gear optimization
+- 🧑‍💻 **Developers** — Parse data programmatically with Python/Excel APIs
+
+### Why Use This Archive?
+
+1. **No Cloud Required** — Fully offline operation
+2. **Full Control** — Your data stays on your device
+3. **Flexible** — Customize to your playstyle
+4. **Free & Open** — No ads, paywalls, or tracking
+5. **Shareable** — Export and collaborate easily
+6. **Version-Tracked** — Full Git history of changes
+
+---
+
+# 🎮 Quick Tips for Success
+
+1. **Set a Routine** — Update your archive weekly as you progress
+2. **Use Filters** — Find specific data instantly with sorting/filtering
+3. **Color-Code** — Use conditional formatting for visual organization
+4. **Cross-Reference** — Link character builds to available weapons and artifacts
+5. **Backup Regularly** — Keep copies of important versions
+6. **Share & Collaborate** — Team up with friends using the same template
+7. **Automate** — Use Excel formulas to calculate totals and track milestones
+
+---
+
+# 📚 Additional Resources
+
+- [Genshin Impact Official Wiki](https://genshin-impact.fandom.com)
+- [Spiral Abyss Guides](https://spiral-abyss.fandom.com)
+- [Character & Weapon Database](https://docs.google.com/spreadsheets/d/1RUCqeWAWpqUGKI8U0MYMhvXy9pZGGv5WD5vbr1PqwKc/)
+- [Artifact Farming Guide](https://genshin-impact.fandom.com/wiki/Artifact)
 
 ---
 
 > *"The journey itself has meaning. The destination is not everything."*
 
-💫 Ad Astra Abyssosque. Happy adventuring, Traveler.
+✨ **Ad Astra Abyssosque.** Happy adventuring, Traveler! 🌍
+
+---
+
+**Last Updated:** 2026-08-31 | **Game Version:** 7.0 | **License:** Apache 2.0
